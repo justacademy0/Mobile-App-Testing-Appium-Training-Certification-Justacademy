@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appium Training with Certification in Mumbai | JustAcademy</title>
+    <meta name="description" content="Get certified in Appium with JustAcademy's professional training in Mumbai. Learn mobile app testing from industry experts with placement assistance. Book a free demo today!">
+    <meta name="keywords" content="appium training, appium certification, mobile testing course mumbai, appium course mumbai, automation testing, certified appium training, appium certification mumbai, placement assistance, JustAcademy">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --secondary: #0f172a;
+            --accent: #0ea5e9;
+            --teal: #14b8a6;
+            --indigo: #6366f1;
+            --light: #f8fafc;
+            --dark: #0f172a;
+        }
+        
+        body { 
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe); 
+            color: var(--dark); 
+            line-height: 1.6; 
+            overflow-x: hidden; 
+        }
+        
+        /* Hero Section with Advanced Animation */
+        .hero {
+            background: linear-gradient(135deg, #0e2a47, #1a56db, #0d9488);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(255,255,255,0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(255,255,255,0.1) 0%, transparent 20%);
+            pointer-events: none;
+            animation: float 25s infinite linear;
+        }
+        
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(circle at 30% 70%, rgba(20, 184, 166, 0.15) 0%, transparent 30%),
+                radial-gradient(circle at 70% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 30%);
+            pointer-events: none;
+            animation: floatReverse 30s infinite linear;
+        }
+        
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(-5%, 5%); }
+            50% { transform: translate(-10%, 0); }
+            75% { transform: translate(-5%, -5%); }
+            100% { transform: translate(0, 0); }
+        }
+        
+        @keyframes floatReverse {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(5%, -5%); }
+            50% { transform: translate(10%, 0); }
+            75% { transform: translate(5%, 5%); }
+            100% { transform: translate(0, 0); }
+        }
+        
+        .hero-content { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            position: relative; 
+            z-index: 1; 
+        }
+        
+        .hero h1 { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
+            animation: fadeInDown 1s ease; 
+        }
+        
+        .hero .justacademy-highlight {
+            color: #ffd700;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 3px;
+        }
+        
+        .hero p { 
+            font-size: 1.5rem; 
+            margin-bottom: 2rem; 
+            max-width: 700px; 
+            margin: 0 auto 2rem; 
+            animation: fadeInUp 1s ease 0.2s both; 
+        }
+        
+        .btn-container { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1rem; 
+            flex-wrap: wrap; 
+            animation: fadeIn 1s ease 0.4s both; 
+        }
+        
+        .btn {
+            display: inline-block; 
+            padding: 1rem 2rem; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600;
+            font-size: 1.1rem; 
+            transition: all 0.3s ease; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            z-index: 2;
+        }
+        
+        .btn-primary { 
+            background-color: white; 
+            color: var(--primary); 
+        }
+        
+        .btn-secondary { 
+            background-color: transparent; 
+            color: white; 
+            border: 2px solid white; 
+        }
+        
+        .btn:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
+        }
+        
+        .btn-primary:hover { 
+            background-color: var(--light); 
+        }
+        
+        .btn-secondary:hover { 
+            background-color: rgba(255,255,255,0.1); 
+        }
+        
+        .placement-badge {
+            display: inline-block; 
+            background: linear-gradient(45deg, #f59e0b, #f97316); 
+            color: white; 
+            padding: 0.8rem 2rem;
+            border-radius: 30px; 
+            font-weight: 700; 
+            font-size: 1.2rem; 
+            margin: 1rem auto 2rem; 
+            animation: pulse 2s infinite;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+        }
+        
+        /* Course Details */
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 4rem 2rem; 
+        }
+        
+        .section-title {
+            text-align: center; 
+            font-size: 2.5rem; 
+            margin-bottom: 3rem; 
+            color: var(--secondary); 
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: ""; 
+            position: absolute; 
+            bottom: -10px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 80px;
+            height: 4px; 
+            background: var(--primary); 
+            border-radius: 2px;
+        }
+        
+        .justacademy-logo {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.2em;
+        }
+        
+        /* Modules Section */
+        .modules-container { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 2rem; 
+            margin-top: 2rem; 
+        }
+        
+        .module-card {
+            background: white; 
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            border-top: 4px solid var(--indigo);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .module-card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); 
+        }
+        
+        .module-header { 
+            padding: 1.5rem; 
+            background: var(--light); 
+            border-bottom: 1px solid #e2e8f0; 
+            position: relative;
+        }
+        
+        .module-title { 
+            font-size: 1.4rem; 
+            color: var(--indigo); 
+            margin-bottom: 0.5rem; 
+        }
+        
+        .module-content { 
+            padding: 1.5rem; 
+        }
+        
+        .module-content ul { 
+            list-style-type: none; 
+        }
+        
+        .module-content li { 
+            padding: 0.5rem 0; 
+            position: relative; 
+            padding-left: 1.5rem; 
+            transition: transform 0.3s ease;
+        }
+        
+        .module-content li:hover {
+            transform: translateX(5px);
+        }
+        
+        .module-content li::before { 
+            content: "✓"; 
+            position: absolute; 
+            left: 0; 
+            color: var(--teal); 
+            font-weight: bold; 
+        }
+        
+        /* Features */
+        .features { 
+            background-color: var(--light); 
+            padding: 4rem 0; 
+        }
+        
+        .features-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 2rem; 
+            margin-top: 2rem; 
+        }
+        
+        .feature-card {
+            text-align: center; 
+            padding: 2rem; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease; 
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .feature-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); 
+        }
+        
+        .feature-icon { 
+            font-size: 3rem; 
+            color: var(--teal); 
+            margin-bottom: 1rem; 
+        }
+        
+        /* Stats */
+        .stats { 
+            background: linear-gradient(to right, var(--secondary), #1e293b); 
+            color: white; 
+            padding: 3rem 0; 
+        }
+        
+        .stats-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 2rem; 
+            text-align: center; 
+        }
+        
+        .stat-number { 
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            margin-bottom: 0.5rem; 
+            color: var(--teal); 
+        }
+        
+        /* CTA */
+        .cta {
+            text-align: center; 
+            padding: 4rem 2rem; 
+            background: linear-gradient(135deg, var(--indigo), var(--teal));
+            color: white; 
+            position: relative; 
+            overflow: hidden;
+        }
+        
+        .cta::before {
+            content: ""; 
+            position: absolute; 
+            top: -50%; 
+            left: -50%; 
+            width: 200%; 
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); 
+            animation: rotate 20s linear infinite;
+        }
+        
+        .cta-content { 
+            position: relative; 
+            z-index: 1; 
+        }
+        
+        .cta h2 { 
+            font-size: 2.5rem; 
+            margin-bottom: 1rem; 
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2); 
+        }
+        
+        .cta p { 
+            max-width: 700px; 
+            margin: 0 auto 2rem; 
+            font-size: 1.2rem; 
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .btn { padding: 0.8rem 1.5rem; font-size: 1rem; }
+            .section-title { font-size: 2rem; }
+            .placement-badge { font-size: 1rem; padding: 0.6rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Appium Training with <span class="justacademy-highlight">JustAcademy</span> Certification</h1>
+            <p>Master Mobile App Testing with Industry Experts in Mumbai. Become a Certified Appium Professional!</p>
+            <div class="placement-badge">Placement Assistance Included</div>
+            <div class="btn-container">
+                <a href="https://www.justacademy.co/register-for-course-demo" class="btn btn-primary">Book a Free Demo Session</a>
+                <a href="https://www.justacademy.co/" class="btn btn-secondary">Explore All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details -->
+    <section class="container">
+        <h2 class="section-title">Appium Certification Course in Mumbai</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+            <span class="justacademy-logo">JustAcademy</span> offers comprehensive Appium training in Mumbai that provides in-depth knowledge of mobile automation testing. 
+            Gain hands-on experience with real-world projects and earn a valuable certification that 
+            boosts your career prospects in the IT industry with dedicated placement assistance.
+        </p>
+        
+        <div class="modules-container">
+            <div class="module-card">
+                <div class="module-header">
+                    <h3 class="module-title">Module 1: Appium Fundamentals</h3>
+                </div>
+                <div class="module-content">
+                    <ul>
+                        <li>Introduction to Mobile Automation</li>
+                        <li>Appium Architecture & Setup</li>
+                        <li>Appium Inspector & Locators</li>
+                        <li>Handling Native Apps</li>
+                        <li>Basic Appium Commands</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-header">
+                    <h3 class="module-title">Module 2: Advanced Techniques</h3>
+                </div>
+                <div class="module-content">
+                    <ul>
+                        <li>Handling Hybrid Applications</li>
+                        <li>Working with Different Mobile OS</li>
+                        <li>Gesture Control Implementation</li>
+                        <li>Parallel Test Execution</li>
+                        <li>Appium Grid Configuration</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="module-card">
+                <div class="module-header">
+                    <h3 class="module-title">Module 3: Framework Design</h3>
+                </div>
+                <div class="module-content">
+                    <ul>
+                        <li>TestNG Framework Integration</li>
+                        <li>Page Object Model Design</li>
+                        <li>Data-Driven Testing</li>
+                        <li>Reporting with ExtentReports</li>
+                        <li>Continuous Integration with Jenkins</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="justacademy-logo">JustAcademy</span>?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Industry-Recognized Certification</h3>
+                    <p>Get certified in Appium with our globally recognized certification program.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Trainers</h3>
+                    <p>Learn from industry professionals with 10+ years of experience.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Placement Assistance</h3>
+                    <p>Get dedicated job placement support after course completion.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Hands-on Projects</h3>
+                    <p>Work on real-world projects to build your portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div>
+                    <div class="stat-number">98%</div>
+                    <div>Placement Rate</div>
+                </div>
+                <div>
+                    <div class="stat-number">500+</div>
+                    <div>Students Trained</div>
+                </div>
+                <div>
+                    <div class="stat-number">30+</div>
+                    <div>Hiring Partners</div>
+                </div>
+                <div>
+                    <div class="stat-number">100%</div>
+                    <div>Practical Training</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Become a Certified Appium Expert?</h2>
+            <p>Join <span class="justacademy-logo">JustAcademy's</span> upcoming batch in Mumbai and kickstart your career in mobile automation testing.</p>
+            <a href="https://www.justacademy.co/register-for-course-demo" class="btn btn-primary">Enroll Now - Limited Seats!</a>
+        </div>
+    </section>
+
+    <script>
+        // Add scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.module-card, .feature-card');
+                const windowHeight = window.innerHeight;
+                
+                elements.forEach(el => {
+                    const elementTop = el.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < windowHeight - elementVisible) {
+                        el.style.opacity = "1";
+                        el.style.transform = "translateY(0)";
+                    }
+                });
+            };
+            
+            // Initialize animation state
+            document.querySelectorAll('.module-card, .feature-card').forEach(el => {
+                el.style.opacity = "0";
+                el.style.transform = "translateY(20px)";
+                el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            });
+            
+            // Trigger on load and scroll
+            animateOnScroll();
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // Additional animation for badges
+            const badges = document.querySelectorAll('.placement-badge');
+            badges.forEach(badge => {
+                badge.addEventListener('mouseover', () => {
+                    badge.style.transform = 'scale(1.1) rotate(3deg)';
+                });
+                badge.addEventListener('mouseout', () => {
+                    badge.style.transform = 'scale(1) rotate(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
